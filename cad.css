@@ -1,0 +1,87 @@
+body{
+    background-color: darkgreen;
+}
+
+.form-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px; /* Ajuste conforme necessário */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid darkgreen;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da altura */
+}
+
+.formcadastro{
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+    
+    gap: 5px;
+}
+
+.formcadastro h1{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.formcadastro p {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formcadastro input{
+    padding: 7px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.formcadastro input:focus {
+    border: 1px solid darkgreen;
+}
+
+.formcadastro label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formcadastro a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formcadastro a:hover{
+    color: darkgreen;
+}
+
+.btn {
+    background-color: darkgreen;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.btn:hover {
+    transform: scale(1.05); 
+    background-color: green;
+}
