@@ -1,0 +1,78 @@
+/* Definir o estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Apenas para diferenciar o fundo */
+}
+
+/* Container que irá envolver as 3 divs */
+.container {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 400px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px; /* Espaço entre a coluna e a div3 */
+}
+
+/* A coluna que contém as divs 1 e 2 (uma abaixo da outra) */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre as divs dentro da coluna */
+}
+
+/* As divs que ficam dentro da coluna (div2 acima de div1) */
+.div1, .div2 {
+    width: 400px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+/* Ajuste para a div2 com o conteúdo alinhado */
+.div2 {
+    display: flex;
+    justify-content: space-between;  /* Espaça os elementos (imagem, texto, botão) */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 0 10px;  /* Adiciona espaçamento interno nas laterais */
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;  /* Espaça os elementos (imagem, texto, botão) */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 0 10px;  /* Adiciona espaçamento interno nas laterais */
+}
+
+/* A div que ficará ao lado direito das duas primeiras, com afastamento */
+.div3 {
+    width: 250px;
+    height: 420px; /* A altura será a soma das duas anteriores */
+    background-color: rgb(19, 126, 60);
+    margin-left: 50px; /* Afastar a div3 para a direita */
+}
+
+/* Estilos para a imagem e o botão */
+.div2 img {
+    width: 50px;  /* Definir um tamanho fixo para a imagem */
+    height: auto;
+}
+
+.toggle-button {
+    padding: 5px 10px;  /* Tamanho do botão */
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Para o botão em estado ativo (alterando a cor de fundo) */
+.toggle-button.active {
+    background-color: #dc3545;
+}
